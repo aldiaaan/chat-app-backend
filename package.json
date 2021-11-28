@@ -21,6 +21,7 @@
     "@tsconfig/recommended": "^1.0.1",
     "@types/express": "^4.17.13",
     "@types/lodash": "^4.14.177",
+    "@types/multer": "^1.4.7",
     "@types/node": "^16.11.9",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -56,6 +57,7 @@
     "firebase-admin": "^10.0.0",
     "lodash": "^4.17.21",
     "mongoose": "^6.0.13",
+    "multer": "^1.4.3",
     "serialize-error": "^9.0.0",
     "streamifier": "^0.1.1"
   }
