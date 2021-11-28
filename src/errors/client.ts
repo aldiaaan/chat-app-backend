@@ -42,3 +42,24 @@ export class RouteNotFoundError extends ClientError {
     super({ message: `Unknown route ${url}`, status: 404, code: 'UNKNOWN_ROUTE' });
   }
 }
+
+export class ValidationError extends ClientError {
+  public constructor(errors: ErrorField[]) {
+    super({
+      message: 'validation error',
+      status: 400,
+      code: 'VALIDATION_ERROR',
+      errors,
+    });
+  }
+}
+
+export class RegisterTokenError extends ClientError {
+  public constructor() {
+    super({
+      message: 'failed registering token',
+      status: 400,
+      code: 'REGISTER_TOKEN_ERROR',
+    });
+  }
+}
