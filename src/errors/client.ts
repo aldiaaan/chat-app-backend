@@ -63,3 +63,13 @@ export class RegisterTokenError extends ClientError {
     });
   }
 }
+
+export class NotAllowedMimeTypeError extends ClientError {
+  public constructor() {
+    super({
+      message: 'note allowed file mimetype',
+      status: 400,
+      code: 'NOT_ALLOWED_MIMETYPE_ERROR',
+    });
+  }
+}
