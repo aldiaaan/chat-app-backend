@@ -1,0 +1,5 @@
+dist
+yarn-error.log
+.env
+node_modules
+firebase-admin-credential.json
