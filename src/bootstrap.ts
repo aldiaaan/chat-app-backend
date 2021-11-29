@@ -32,7 +32,7 @@ export const initializeExpress = async (app: Express) => {
   app.use((req, _res, next) => next(new RouteNotFoundError(req.originalUrl)));
   app.use(errorHandler);
 
-  log('success initializing express app ...');
+  log('success initializing express app ');
 
   app.listen(process.env.PORT || process.env.APP_PORT || 8080);
 

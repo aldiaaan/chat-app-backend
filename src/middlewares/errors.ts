@@ -4,7 +4,7 @@ import { ClientError } from '@/errors';
 // eslint-disable-next-line max-params
 export const errorHandler: ErrorRequestHandler = (error, _req, res, _next) => {
   const isErrorSafeForClient = error instanceof ClientError;
-
+  console.log({ error });
   if (isErrorSafeForClient) {
     res.status(error.status).send(error.toJSON());
   } else {
