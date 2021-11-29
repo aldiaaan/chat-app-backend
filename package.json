@@ -9,8 +9,8 @@
     "format": "",
     "build": "rimraf dist/ && tsc",
     "prepare": "husky install",
-    "start": "tsc-watch -p ./tsconfig.json --outDir ./dist --onSuccess \"node ./dist/index.js\"",
-    "start:production": "pm2 start --name 'backend_app' --node-args='-r ./tsconfig-paths.js' ./dist/index.js"
+    "start:dev": "tsc-watch -p ./tsconfig.json --outDir ./dist --onSuccess \"node ./dist/index.js\"",
+    "start": "npm run build && pm2 start --name 'simple_chat_backend' --node-args='-r ./tsconfig-paths.js' ./dist/index.js"
   },
   "_moduleAliases": {
     "@": "./dist"
