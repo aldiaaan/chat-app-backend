@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/**/*.{ts,js} --fix",
     "format": "",
-    "build": "rimraf dist/ && tsc",
+    "build": "tsc",
     "prepare": "husky install",
-    "start:dev": "tsc-watch -p ./tsconfig.json --outDir ./dist --onSuccess \"node ./dist/index.js\"",
-    "start": "pm2 start --name 'simple_chat_backend' --node-args='-r ./tsconfig-paths.js' ./dist/index.js"
+    "start": "node -r ./tsconfig-paths.js ./dist/index.js",
+    "start:dev": "tsc-watch -p ./tsconfig.json --outDir ./dist --onSuccess \"node ./dist/index.js\""
   },
   "_moduleAliases": {
     "@": "./dist"

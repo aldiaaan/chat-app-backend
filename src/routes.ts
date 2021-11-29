@@ -1,6 +1,6 @@
 import { Express } from 'express';
-import * as MessagingController from './controllers/messaging';
-import * as ImageController from './controllers/image';
+import * as MessagingController from '@/controllers/messaging';
+import * as ImageController from '@/controllers/image';
 
 import multer from 'multer';
 

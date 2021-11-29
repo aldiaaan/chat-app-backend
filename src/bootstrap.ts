@@ -1,6 +1,5 @@
 import express, { Express } from 'express';
 import firebaseAdmin from 'firebase-admin';
-import mongoose from 'mongoose';
 import path from 'path';
 import { RouteNotFoundError } from './errors/client';
 
