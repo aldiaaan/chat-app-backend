@@ -11,7 +11,6 @@ const imageUploadHandler = multer({
 export const attachRoutes = (app: Express) => {
   app.get('/ping', (_req, res) => res.send('pong'));
 
-  app.post('/api/v1/register', MessagingController.registerToTopic);
   app.post('/api/v1/message/send', MessagingController.send);
 
   app.post('/api/v1/image/upload', imageUploadHandler, ImageController.upload);
