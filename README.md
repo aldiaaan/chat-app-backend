@@ -4,6 +4,11 @@
 - Aldian Asmara (1313618032)
 - Muhammad Bagas Pradana (1313618015)
 
+## Information
+:blue_book: Repository Front-end kami bisa dilihat : [Disini](https://github.com/bagas050201/chatappfcm)
+
+:clapper: Video demonstrasi dari aplikasi chatappfcm ini : [youtube](https://youtu.be/u6XuDwigng8)
+
 ## Setting up development environment
 - clone repository ini
 - buat file `.env` baru di  projects root directory dan copy konten .env.example dan isi variable yang dibutuhkan
